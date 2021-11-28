@@ -40,7 +40,7 @@ func main() {
     OUTPUT_FILE, err := os.OpenFile("output.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644);
     if err != nil { log.Fatal(err); }
     
-    OUTPUT_FILE.WriteString("const u8 level1["+strconv.Itoa(MAP_WIDTH)+"]["+strconv.Itoa(MAP_HEIGHT)+"] = {\n");
+    OUTPUT_FILE.WriteString("const u8 level1["+strconv.Itoa(MAP_HEIGHT)+"]["+strconv.Itoa(MAP_WIDTH)+"] = {\n");
 
     for i:=0;i<=HEIGHT_TILES-1;i++ {
 
